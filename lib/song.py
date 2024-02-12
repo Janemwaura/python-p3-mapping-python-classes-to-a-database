@@ -3,14 +3,14 @@ from config import CONN, CURSOR
 pdb.set_trace()
 
 class Song:
-    def__init__(self, name, album):
+    def __init__(self, name, album):
         self.id = None
         self.name = name
         self.album = album
     @classmethod
-    def create_table(self)
+    def create_table(self):
        sql = """CREATE TABLE IF NOT EXISTS songs(
-           id INTEGER PRIMARY KEY',
+           id INTEGER PRIMARY KEY,
            name TEXT NOT NULL,
            album TEXT NOT NULL
        )"""   
